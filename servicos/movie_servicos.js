@@ -11,7 +11,18 @@ function inserirMovies(novoMovie) {
     fs.writeFileSync("allMovies.json", JSON.stringify(novaListaMovies));
 }
 
+function modificarMovies(modificacoes, id) {
+    let movies = JSON.parse(fs.readFileSync("allMovies.json"));
+    const filmeModificado = movies.findIndex(filme => filme.id === id)
+
+    const indiceAlterado = {...movies[filmeModificado], ...modificacoes};
+    movies[filmeModificado] = indiceAlterado;
+
+    fs.writeFileSync("allMovies.json", JSON.stringify(movies));
+}
+
 module.exports = {
     getTodosMovies,
-    inserirMovies
+    inserirMovies,
+    modificarMovies
 }
