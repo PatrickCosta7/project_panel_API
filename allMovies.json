@@ -1,1 +1,18 @@
-[{"id":"1","nome":"Your Name","imagem":"https://br.web.img3.acsta.net/pictures/17/10/04/19/01/4966397.jpg","descricao":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet, autem magnam adipisci, facilis quaerat nisi harum cumque quibusdam deserunt dolorem eligendi accusamus!","visto":"Assistido","curtido":"Curtido"},{"id":"2","nome":"Inglourious Basterds","imagem":"https://m.media-amazon.com/images/M/MV5BOTJiNDEzOWYtMTVjOC00ZjlmLWE0NGMtZmE1OWVmZDQ2OWJhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_FMjpg_UX1000_.jpg","descricao":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet, autem magnam adipisci, facilis quaerat nisi harum cumque quibusdam deserunt dolorem eligendi accusamus!","visto":"Assistido","curtido":"Curtido"}]
+[
+    {
+        "id": "1",
+        "nome": "Your Name",
+        "imagem": "https://br.web.img3.acsta.net/pictures/17/10/04/19/01/4966397.jpg",
+        "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet, autem magnam adipisci, facilis quaerat nisi harum cumque quibusdam deserunt dolorem eligendi accusamus!",
+        "visto": "Não assistido",
+        "curtido": "--"
+    },
+    {
+        "id": "2",
+        "nome": "Inglourious Basterds",
+        "imagem": "https://m.media-amazon.com/images/M/MV5BOTJiNDEzOWYtMTVjOC00ZjlmLWE0NGMtZmE1OWVmZDQ2OWJhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_FMjpg_UX1000_.jpg",
+        "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet, autem magnam adipisci, facilis quaerat nisi harum cumque quibusdam deserunt dolorem eligendi accusamus!",
+        "visto": "Assistido",
+        "curtido": "Curtido"
+    }
+]

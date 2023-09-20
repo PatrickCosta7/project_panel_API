@@ -1,4 +1,4 @@
-const { getTodosMovies, inserirMovies, modificarMovies } = require("../servicos/movie_servicos")
+const { getTodosMovies, inserirMovies, modificarMovies, deletarMoviePorId } = require("../servicos/movie_servicos")
 
 function getMovies(req, res) {
     try {
@@ -48,8 +48,27 @@ function patchMovies(req, res) {
     }
 }
 
+function deleteMovie(req, res) {{
+    try{
+        const id = req.params.id;
+        if (id && Number(id)){
+            deletarMoviePorId(id);
+            res.status(201)
+            res.send("Filme deletado com sucesso!");       
+        } else {
+            res.status(422)
+            res.send("Id errado")
+        }
+
+    } catch(error) {
+        res.status(500)
+        res.send(error.message)
+    }
+}}
+
 module.exports = {
     getMovies,
     postMovies,
-    patchMovies
+    patchMovies,
+    deleteMovie
 }
