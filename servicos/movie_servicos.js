@@ -20,7 +20,7 @@ function inserirMovies(novoMovie) {
 
 function modificarMovies(modificacoes, id) {
     let movies = JSON.parse(fs.readFileSync("allMovies.json"));
-    const filmeModificado = movies.findIndex(filme => filme.id === id)
+    const filmeModificado = movies.findIndex(movie => movie.id == id);
 
     const indiceAlterado = {...movies[filmeModificado], ...modificacoes};
     movies[filmeModificado] = indiceAlterado;
