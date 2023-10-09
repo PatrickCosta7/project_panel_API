@@ -31,7 +31,7 @@ function modificarMovies(modificacoes, id) {
 function deletarMoviePorId(id) {
     const movies = JSON.parse(fs.readFileSync("allMovies.json"));
 
-    const moviesFiltrados = movies.filter( movie => movie.id !== id);
+    const moviesFiltrados = movies.filter( movie => movie.id != id);
     fs.writeFileSync("allMovies.json", JSON.stringify(moviesFiltrados));
 }
 
