@@ -1,0 +1,1 @@
+Estou utilizando o nodemon para rodar esssa API, após instalar os dependencies via "npm install", digite "nodemon app.js" no terminal da pasta, caso não funcione, recomento tentar instalar o nodemon a parte ("npm i nodemon").
